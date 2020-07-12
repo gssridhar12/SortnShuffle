@@ -1,0 +1,82 @@
+button.primary{
+  border-radius: 6px;
+  background-color: #72C3DC;
+  color: #FFFFFF;
+  border-color: #72C3DC;
+  width: 80px;
+  height: 30px;
+}
+
+button#sort{
+  margin-left: 10px;
+}
+
+.button-container{
+  display: flex;
+  flex-grow: 1;
+}
+
+.number-container{
+  display: flex;
+  flex-grow: 3;
+  flex-wrap: wrap;
+}
+
+.number-container > div {
+  width: 30%;
+  height: 40%;
+  text-align: center;
+  line-height: 75px;
+}
+
+.number-container > div:nth-child(1),
+.number-container > div:nth-child(6),
+.number-container > div:nth-child(7) {
+  background-color: #2b8ead;
+}
+
+.number-container > div:nth-child(2),
+.number-container > div:nth-child(4),
+.number-container > div:nth-child(8)  {
+  background-color: #bfbfbf;
+}
+
+.number-container > div:nth-child(3),
+.number-container > div:nth-child(5),
+.number-container > div:nth-child(9) {
+  background-color: #2f454e;
+}
+
+.container{
+  display: flex;
+  font-size: 48px;
+}
+
+footer{
+  position: fixed;
+  bottom: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container{
+    flex-flow: column-reverse;
+    font-size: 15px;
+  }
+  .button-container{
+    align-self: center;
+  }
+
+  .number-container > div {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .number-container > div > span {
+    width: 97%;
+    background-color: #efefef;
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
